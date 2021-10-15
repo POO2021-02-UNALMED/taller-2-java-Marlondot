@@ -4,6 +4,10 @@ public class Motor {
 	String tipo;
 	int registro;
 	
+	public Motor() {
+		
+	}
+	
 	void cambiarRegistro(int registro) {
 		this.registro=registro;
 	}

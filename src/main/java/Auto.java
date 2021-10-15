@@ -8,6 +8,11 @@ public class Auto {
 	int registro;
 	static int cantidadCreados;
 	
+	
+	public Auto() {
+		cantidadCreados++;
+	}
+	
 	int cantidadAsientos() {
 		return this.asientos.registro;
 	}
