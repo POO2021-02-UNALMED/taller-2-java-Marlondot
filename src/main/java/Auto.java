@@ -17,12 +17,20 @@ public class Auto {
 		return this.asientos.length;
 	}
 	
+	boolean check=true
+			
+	for (Asiento element: asientos) {
+		if (element.registro!=registro) {
+			check=false
+		}
+	}
+	
 	String verificarIntegridad() {
-		if (this.asientos[0].registro==this.registro && this.motor.registro==this.registro) {
-			return "Las piezas no son originales";
+		if (check && this.motor.registro==this.registro) {
+			return "Auto original";
 		}
 		else {
-			return "Auto original";
+			return "Las piezas no son originales";
 		}
 	}
 
