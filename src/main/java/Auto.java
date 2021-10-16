@@ -14,7 +14,13 @@ public class Auto {
 	}
 	
 	int cantidadAsientos() {
-		return this.asientos.length;
+		int cantidad;
+		for (Asiento asiento: asientos) {
+			if (asiento.getClass().getName()=="Asiento")
+				cantidad++;
+		}
+		//return this.asientos.length;
+		return cantidad;
 	}
 	
 	String verificarIntegridad() {
