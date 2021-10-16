@@ -16,7 +16,7 @@ public class Auto {
 	int cantidadAsientos() {
 		int cantidad=0;
 		for (Asiento asiento: asientos) {
-			if (asiento.getClass().getName()=="Asiento")
+			if (asiento!=null)
 				cantidad++;
 		}
 		//return this.asientos.length;
