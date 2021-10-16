@@ -1,4 +1,5 @@
 package test;
+import java.util.Arrays;
 public class Asiento {
 	String color;
 	int precio;
@@ -8,8 +9,13 @@ public class Asiento {
 		
 	}
 	
+	String[] colors= {"rojo", "verde", "amarillo", "negro", "blanco"};
+	
 	public void cambiarColor(String Color){
-		this.color=Color;
+		if (Arrays.asList(colors).contains(Color)) {
+			this.color=Color;
+		}
+		
 		
 	}
 	
