@@ -24,7 +24,7 @@ public class Auto {
 	}
 	
 	String verificarIntegridad() {
-		bolean check=true;
+		boolean check=true;
 		for (Asiento asiento: asientos) {
 			if (asiento!=null) {
 				if (asiento.registro!=this.registro) {
