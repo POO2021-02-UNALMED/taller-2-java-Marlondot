@@ -24,7 +24,15 @@ public class Auto {
 	}
 	
 	String verificarIntegridad() {
-		if (this.asientos[0].registro==this.registro && this.motor.registro==this.registro) {
+		bolean check=true;
+		for (Asiento asiento: asientos) {
+			if (asiento!=null) {
+				if (asiento.registro!=this.registro) {
+					check=false
+				}
+			}
+		}
+		if (check && this.motor.registro==this.registro) {
 			return "Auto original";
 		}
 		else {
