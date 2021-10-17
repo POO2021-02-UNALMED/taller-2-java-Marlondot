@@ -28,7 +28,7 @@ public class Auto {
 		for (Asiento asiento: asientos) {
 			if (asiento!=null) {
 				if (asiento.registro!=this.registro) {
-					check=false
+					check=false;
 				}
 			}
 		}
